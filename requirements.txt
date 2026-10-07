@@ -1,0 +1,4 @@
+ema-lightning>=1.0.1
+fastapi
+uvicorn[standard]
+websockets

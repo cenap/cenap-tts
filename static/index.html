@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Türkçe Metin Okuma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="head">
+      <h1>Türkçe Metin Okuma</h1>
+      <div id="status" class="status loading" role="status" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="statusText">Model yükleniyor…</span>
+      </div>
+    </header>
+
+    <section class="editor">
+      <label class="sr-only" for="text">Okunacak metin</label>
+      <textarea id="text" placeholder="Okunacak Türkçe metni buraya yapıştırın… (.txt sürükleyip bırakabilirsiniz)"
+                spellcheck="false"></textarea>
+      <div class="meta">
+        <span id="count">0 karakter</span>
+        <span id="seedInfo" class="seed-info"></span>
+      </div>
+      <div id="readingView" class="reading" hidden></div>
+    </section>
+
+    <section class="controls">
+      <button id="readBtn" class="primary" disabled>Oku</button>
+      <button id="stopBtn" disabled>Durdur</button>
+      <button id="pauseBtn" disabled>Duraklat</button>
+      <button id="downloadBtn">WAV olarak indir</button>
+    </section>
+
+    <details class="settings">
+      <summary>Gelişmiş ayarlar</summary>
+      <div class="row">
+        <label for="speed">Hız</label>
+        <input type="range" id="speed" min="0.25" max="4" step="0.05" value="1">
+        <output id="speedVal" for="speed">1.00×</output>
+      </div>
+      <div class="row">
+        <label for="seed">Tohum (seed)</label>
+        <input type="number" id="seed" min="0" step="1" placeholder="boş = rastgele">
+      </div>
+    </details>
+
+    <p id="notice" class="notice" role="status" aria-live="polite" hidden></p>
+    <p class="ai-note">Bu ses yapay zekâ ile üretilmiştir.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
