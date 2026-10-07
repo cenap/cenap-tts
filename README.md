@@ -205,11 +205,13 @@ Değişiklik katkısı için:
 
 ## Lisanslar
 
-Bu depoda henüz bir proje lisans dosyası (`LICENSE`) bulunmadığından, proje
-kaynak kodunun lisansı belirtilmemiştir. Model kartında belirtilen
-[`canberkkkkkk/ema-lightning` lisansı](https://huggingface.co/canberkkkkkk/ema-lightning)
-Apache-2.0'dır; bu, bu depodaki kodun lisansını belirlemez. Yeniden kullanım
-ve dağıtım koşullarını netleştirmek için proje sahibinin ayrıca bir lisans
-seçip depoya eklemesi gerekir.
+Bu projenin kaynak kodu [Apache License 2.0](LICENSE) koşullarıyla
+lisanslanmıştır. Lisans, bu depodaki model dışı proje kodu ve dokümantasyon
+içindir.
+
+Kullanılan [`canberkkkkkk/ema-lightning` modelinin lisansı](https://huggingface.co/canberkkkkkk/ema-lightning)
+ayrı olarak Apache-2.0'dır. Model ağırlıkları ve diğer üçüncü taraf
+bileşenler kendi lisans koşullarına tabi olabilir; bunları ayrıca kontrol
+edin.
 
 Aynı anda yalnızca tek okuma yapılır; yeni "Oku" gelirse önceki iptal olur.
